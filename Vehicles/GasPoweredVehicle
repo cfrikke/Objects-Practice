@@ -1,0 +1,24 @@
+namespace Vehicles
+{
+    public class GasPoweredVehicle : Vehicle
+    {
+        public GasPoweredVehicle(string make, string model, int year) : base(make, model, year)
+        {
+            numberOfTires = 4;
+        }
+        public void Drive()
+        {
+            Console.WriteLine("The " + GetVehicleTitle() + " is starting to move...");
+        }
+        public void On()
+        {
+            Console.WriteLine("The " + GetVehicleTitle() + " is starting...");
+        }
+
+
+        public void Off()
+        {
+            Console.WriteLine("Turning off the " + GetVehicleTitle() + ".");
+        }
+    }
+}
